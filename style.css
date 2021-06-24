@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------- BAR NAVIGATION SETTINGS STARTS--------*/
+
+#navBarContainer{
+
+    display: none;
+}
+
+#menu {
+
+    display: none;
+    position: absolute;
+    align-content: center;
+    margin-left: 20%;
+    margin-top: 2.5%;
+    width: 60%;
+    justify-content: space-between;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 1.5rem ;
+    color: white;
+    z-index: 4;
+    cursor: pointer;
+}
+
+#links{
+
+    display: none;
+    cursor: pointer;
+
+
+}
+
+#navBar {
+
+display: none;
+position:absolute;
+background-color:darksalmon;
+width: 100%;
+height: 10%;
+z-index: 4;
+
+}
+
+
+
+
+/*------- BAR NAVIGATION SETTINGS ENDS--------*/
+/*------- HAMBURGER NAVIGATION SETTINGS STARTS--------*/
+#navigationHamburger{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 270px;
+    top: 15px;
+    cursor: pointer;
+    background-color: red;
+    
+}
+
+#navSelector { /*----USED FOR ON CLICK FUNCTION----*/ 
+    position: absolute;
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    z-index: 5
+}
+
+
+
+.line {
+    display: flex;
+    
+    background: white;
+    width: 35px;
+    height: 2px;
+    margin: 3px;
+    padding-top: 5px;
+    border-radius: 10px;
+    z-index: 3;
+    cursor: pointer;
+}
+/*-------NAVIGATION SETTINGS ENDS--------*/
+
+/*-------HERO SECTION STARTS--------*/
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#heroText {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 30%;
+    padding: 5px;
+    z-index: 3;
+
+}
+
+#headerBackground {
+
+
+    position: absolute;
+    background-color: darksalmon;
+    height:40%;
+    width: 100%;
+    margin-top: 0%;
+    z-index: 2;
+}
+
+
+#CTA{
+display: flex;
+font-family: sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+margin-top: 70vh;
+align-content: center;
+position: absolute;
+color: white;
+z-index: 4;
+}
+
+#btn{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 60vh;
+    width: 100px;
+    height:50px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    color: white;
+    background-color: darksalmon;
+    z-index: 4;
+    cursor: pointer;
+}
+
+#overlay{
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    z-index: 1;
+
+}
+
+#imageContainer {
+
+    background-image: url(hero.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 15s; 
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+
+        transform: scale(1);
+    }
+
+}
+
+/*-------HERO SECTION ENDS--------*/
+#content1 {
+
+    background-color: darksalmon;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+}
+
+#content1Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 10vh;
+    font-size: 2rem;
+    text-align: center;
+     z-index: 3;
+
+}
+
+#content1Text{
+
+   position: absolute;
+   color: white;
+   font-family: sans-serif;
+   font-size: 1.5rem;
+   margin-top: 30vh;
+   padding: 10px;
+   text-align: center;
+    z-index: 3;
+}
+
+#content2 {
+
+    background-color: dimgrey;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+}
+#content2Header{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 10vh;
+    font-size: 2rem;
+    text-align: center;
+     z-index: 3;
+}
+
+
+#content2Text {
+
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20vh;
+    padding: 10px;
+    text-align: center;
+     z-index: 3;
+}
+
+
+#contactinfo{
+
+position: absolute;
+left: 10vw;
+width: 100%;
+
+}
+#adress {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 75vh;
+    text-align: center;
+     z-index: 3;
+}
+
+#email {
+
+    display: flex;
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 80vh;
+    text-align: center;
+     z-index: 3;
+}
+
+
+#phone {
+
+    display: flex;
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 85vh;
+    text-align: center;
+     z-index: 3;
+}
+
+/*------------------------MEDIA QUIRIES------------------------------*/
+
+
+/*------------PHONES---------------*/
+@media (min-width: 375px) {
+
+
+    #navBarContainer{
+
+        display: none;
+    }
+    
+    #menu {
+    
+        display: none;
+        position: absolute;
+        align-content: center;
+        margin-left: 20%;
+        margin-top: 2.5%;
+        width: 60%;
+        justify-content: space-between;
+        list-style: none;
+        font-family: sans-serif;
+        font-size: 1.5rem ;
+        color: white;
+        z-index: 4;
+    }
+    
+    #links{
+    
+        display:none;
+    
+    
+    }
+    
+    #navBar {
+    
+    display: none;
+    position:absolute;
+    background-color:darksalmon;
+    width: 100%;
+    height: 10%;
+    z-index: 4;
+    
+    }
+
+
+
+
+    #navigationHamburger{
+
+
+        left: 330px;
+        top: 15px;
+       
+        
+    }
+
+
+}
+
+@media (min-width: 414px) {
+
+    #navigationHamburger{
+
+        left: 360px;
+        top: 15px;
+        
+        
+    }
+
+    .line {
+        display: flex;
+        
+        background: white;
+        width: 40px;
+        height: 2px;
+        margin: 3px;
+        padding-top: px;
+        border-radius: 10px;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    #heroText {
+
+    
+        font-size: 3rem;
+        margin-top: 20%;
+        padding: 5px;
+        
+    
+    }
+}
+
+
+
+
+
+@media (min-width: 568px){
+
+    #heroText {
+
+       
+        font-size: 3rem;
+        margin-top: 20%;
+        padding: 0px;
+        z-index: 3;
+    
+    }
+
+
+
+
+         #headerBackground {
+
+            display: none;
+            position: absolute;
+            background-color: darksalmon;
+            height:40%;
+            width: 100%;
+            margin-top: 0%;
+            z-index: 2;
+        }
+
+        #btn{
+
+            
+            font-size: 1rem;
+            margin-top: 80vh;
+            width: 100px;
+        }
+        #navigationHamburger{
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            left: 500px;
+            top: 15px;
+            cursor: pointer;
+            background-color: red;
+            
+        }
+}
+
+
+@media (min-width: 667px) {
+
+    #navigationHamburger{
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        left: 750px;
+        top: 15px;
+        cursor: pointer;
+        background-color: red;
+        
+    }
+
+/*------------PHONES---------------*/
+
+/*--------WIDE SCREENS-------------*/
+
+
+@media (min-width: 1024px) {
+
+/*------- BAR NAVIGATION SETTINGS STARTS--------*/
+    #navBarContainer{
+
+        display: flex;
+        
+    }
+
+    #navBar{
+
+        height: 5% ;
+    }
+    
+    #menu {
+    
+        display: flex;
+        margin-top: .5%;
+    }
+    
+    #links{
+    
+        display: flex;
+    
+    
+    }
+    
+    #navBar {
+    
+    display: flex;
+    
+    }
+
+
+/*------- BAR NAVIGATION SETTINGS ENDS--------*/
+
+
+
+
+
+    #navigationHamburger {
+
+        display: none;
+    }
+
+    .line {
+
+        display: none;
+    }
+
+    #navSelector {
+        display: none;
+    }
+
+
+    #heroText {
+
+       
+        font-size: 4rem;
+        margin-top: 30%;
+        padding: 0px;
+        z-index: 3;
+    
+    }
+
+
+    #CTA{
+     
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 60vh;
+       }
+
+       #btn{
+
+            
+        font-size: 1.5rem;
+        margin-top: 70vh;
+        width: 100px;
+        height: 60px;
+    }
+
+    #content1Header{
+        margin-top: 20vh;
+        font-size: 3rem;
+        
+    
+    }
+
+
+    #content1Text {
+        margin-top: 35vh;
+        font-size: 2rem;
+        width: 800px;
+    }
+
+    #content2Header{
+
+        margin-top: 10vh;
+        font-size: 3rem;
+       
+    }
+
+    #content2Text {
+
+        font-size: 2rem;
+        width: 800px;
+    }
+  
+    #adress {
+
+        font-size: 30px;
+       
+    }
+
+    #email {
+
+        font-size: 30px;
+    }
+
+    #phone {
+
+        font-size: 30px;
+    }
+
+} 
+
+@media (min-width: 1395px) {
+
+
+    #heroText {
+
+       
+        font-size: 4rem;
+        margin-top: 20%;
+        padding: 0px;
+        z-index: 3;
+    
+    }
+
+    #menu {
+
+        margin-top: .5%;
+      
+    }
+
+}
